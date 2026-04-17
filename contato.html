@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="MSOUSA Contábil — fale conosco. Endereço, telefone, e-mail e formulário de contato."
+      content="Fale com a MSOUSA Contábil — Cidade Dutra (São Paulo/SP). Telefone, e-mail, endereço e formulário de contato."
     />
-    <title>Fale Conosco — MSOUSA Contábil</title>
+    <title>Fale Conosco | MSOUSA Contábil</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0b3d91" />
+    <link rel="canonical" href="https://msousacontabil.com.br/contato.html" />
+    <meta property="og:site_name" content="MSOUSA Contábil" />
+    <meta property="og:title" content="Fale Conosco | MSOUSA Contábil" />
+    <meta
+      property="og:description"
+      content="Fale com a MSOUSA Contábil — Cidade Dutra (São Paulo/SP). Telefone, e-mail, endereço e formulário de contato."
+    />
+    <meta property="og:url" content="https://msousacontabil.com.br/contato.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary" />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/logomarca.png" type="image/png" />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body>
@@ -75,10 +89,19 @@
 
             <div class="card">
               <h3>Mensagem</h3>
-              <form class="form" data-contact-form>
+              <form
+                class="form"
+                data-contact-form
+                method="POST"
+                action="https://formsubmit.co/contabil@msousacontabil.com.br"
+                accept-charset="UTF-8"
+              >
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="_subject" value="Contato pelo site — MSOUSA Contábil" />
+                <input type="hidden" name="_captcha" value="false" />
                 <div class="field">
                   <label for="nome">Nome</label>
-                  <input id="nome" name="nome" autocomplete="name" required />
+                  <input id="nome" name="name" autocomplete="name" required />
                 </div>
                 <div class="field">
                   <label for="email">E-mail</label>
@@ -86,19 +109,17 @@
                 </div>
                 <div class="field">
                   <label for="telefone">Telefone</label>
-                  <input id="telefone" name="telefone" autocomplete="tel" inputmode="tel" />
+                  <input id="telefone" name="phone" autocomplete="tel" inputmode="tel" />
                 </div>
                 <div class="field">
                   <label for="mensagem">Mensagem</label>
-                  <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                  <textarea id="mensagem" name="message" rows="5" required></textarea>
                 </div>
                 <div class="form-actions">
                   <button class="button" type="submit">Enviar</button>
                   <button class="button button-secondary" type="reset">Limpar</button>
                 </div>
-                <p class="form-hint muted" data-form-hint>
-                  Ao enviar, seu aplicativo de e-mail será aberto com a mensagem preenchida.
-                </p>
+                <p class="form-hint muted">Ao enviar, a mensagem será encaminhada para nosso e-mail.</p>
               </form>
             </div>
           </div>
@@ -115,28 +136,85 @@
             <article class="card card-list">
               <h3>Agenda de Obrigações</h3>
               <ul>
-                <li>Agenda de SP</li>
-                <li>Agenda do DF</li>
-                <li>Agenda Trabalhista</li>
-                <li>Agendas por Estado</li>
+                <li>
+                  <a href="https://legislacao.fazenda.sp.gov.br/" target="_blank" rel="noopener noreferrer"
+                    >Agenda de SP</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.receita.fazenda.df.gov.br/" target="_blank" rel="noopener noreferrer"
+                    >Agenda do DF</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.gov.br/trabalho-e-emprego/pt-br" target="_blank" rel="noopener noreferrer"
+                    >Agenda Trabalhista</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.gov.br/pt-br/servicos-estaduais" target="_blank" rel="noopener noreferrer"
+                    >Agendas por Estado</a
+                  >
+                </li>
               </ul>
             </article>
             <article class="card card-list">
               <h3>Tabelas Práticas</h3>
               <ul>
-                <li>Imposto de Renda 2014</li>
-                <li>FGTS</li>
-                <li>Salário Mínimo Federal</li>
-                <li>Mais tabelas</li>
+                <li>
+                  <a
+                    href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Imposto de Renda 2014</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.caixa.gov.br/beneficios-trabalhador/fgts/Paginas/default.aspx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >FGTS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/salario-minimo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Salário Mínimo Federal</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.contabeis.com.br/tabelas/" target="_blank" rel="noopener noreferrer"
+                    >Mais tabelas</a
+                  >
+                </li>
               </ul>
             </article>
             <article class="card card-list">
               <h3>Modelos de Documentos</h3>
               <ul>
-                <li>Imóveis</li>
-                <li>Condomínios</li>
-                <li>Documentos Importantes</li>
-                <li>Modelo de Recibo</li>
+                <li>
+                  <a href="https://www.registrodeimoveis.org.br/" target="_blank" rel="noopener noreferrer"
+                    >Imóveis</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.sindiconet.com.br/" target="_blank" rel="noopener noreferrer"
+                    >Condomínios</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.gov.br/pt-br/servicos" target="_blank" rel="noopener noreferrer"
+                    >Documentos Importantes</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.contabeis.com.br/modelos/" target="_blank" rel="noopener noreferrer"
+                    >Modelo de Recibo</a
+                  >
+                </li>
               </ul>
             </article>
           </div>

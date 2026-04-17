@@ -50,6 +50,10 @@ const initContactForm = () => {
   const form = qs("[data-contact-form]");
   if (!(form instanceof HTMLFormElement)) return;
 
+  const action = (form.getAttribute("action") || "").trim().toLowerCase();
+  const shouldMailto = action.length === 0 || action.startsWith("mailto:");
+  if (!shouldMailto) return;
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -111,6 +115,23 @@ const initConsultaSearch = () => {
   input.addEventListener("input", render);
 };
 
+const initConsultaLinks = () => {
+  const grid = qs("[data-consulta-grid]");
+  if (!(grid instanceof HTMLElement)) return;
+
+  qsa("li", grid).forEach((li) => {
+    const anchor = qs("a[href]", li);
+    if (!(anchor instanceof HTMLAnchorElement)) return;
+
+    li.style.cursor = "pointer";
+    li.addEventListener("click", (event) => {
+      const target = event.target;
+      if (target instanceof HTMLElement && target.closest("a")) return;
+      anchor.click();
+    });
+  });
+};
+
 const initActiveNav = () => {
   const nav = qs("[data-nav]");
   if (!nav) return;
@@ -143,4 +164,5 @@ initMenu();
 initYear();
 initContactForm();
 initConsultaSearch();
+initConsultaLinks();
 initActiveNav();
